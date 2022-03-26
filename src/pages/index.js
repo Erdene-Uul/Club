@@ -4,6 +4,7 @@ import Team from "../components/Team";
 import Info from "../components/Info";
 import { Link } from "react-router-dom";
 import News from "../components/News";
+import Footer from "../components/Footer";
 
 export default function Home(props) {
   return (
@@ -19,6 +20,7 @@ export default function Home(props) {
         </Link>
       </div>
       <News />
+      <Footer />
     </div>
   );
 }
