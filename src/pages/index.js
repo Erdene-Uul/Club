@@ -4,11 +4,12 @@ import Team from "../components/Team";
 import Info from "../components/Info";
 import { Link } from "react-router-dom";
 import News from "../components/News";
-import Footer from "../components/Footer";
+import CoverEffect from "../components/Cover/CoverEffect";
 
 export default function Home(props) {
   return (
     <div className="bg-[#1C1C28] w-full h-full font-Roboto z-10">
+      <CoverEffect />
       <AboutUs />
       <Team />
       <Info />
@@ -20,7 +21,6 @@ export default function Home(props) {
         </Link>
       </div>
       <News />
-      <Footer />
     </div>
   );
 }

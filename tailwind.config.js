@@ -8,6 +8,14 @@ module.exports = {
         Montserrat: ["Montserrat"],
         Poppins: ["Poppins"],
       },
+      colors: {
+        buttonColor1: "#9A4DFF",
+        buttonColor2: "#4FE9FF",
+      },
+      spacing: {
+        512: "32rem",
+        1080: "44rem",
+      },
     },
   },
 

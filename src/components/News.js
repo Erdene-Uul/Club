@@ -1,35 +1,53 @@
 import React, { Component } from "react";
-import axios from "axios";
+import sanityClient from "../client";
+import { Link } from "react-router-dom";
 
 export default class News extends Component {
   state = {
     news: [],
   };
-  baseURL = "http://localhost:9000/api/v1/news";
   componentDidMount() {
-    axios.get(this.baseURL).then((res) => {
-      this.setState({ news: res.data.data });
-    });
+    sanityClient
+      .fetch(
+        `*[_type == "post"]{
+        title,
+        slug,
+        mainImage{
+          asset->{
+            _id,
+            url
+          }
+        }
+      }
+      `
+      )
+      .then((res) => {
+        this.setState({ news: res });
+      });
   }
   render() {
-    console.log(this.state.news);
     return (
-      <div className="flex max-w-7xl mx-auto space-x-16 my-32 ">
-        {this.state.news.map((el) => {
-          return (
-            <div uk-slideshow>
-              <button className="flex flex-col items-center mb-6 uk-slideshow-items">
-                <img uk-cover className="w-96 h-72 rounded-xl" src={el.photo} />
-                <p className="text-white mt-5 text-center font-semibold">
-                  {el.title}
-                </p>
-                <div className="text-[#828282]">
-                  {el.createdAt.substring(0, 10)}
+      <div className="flex max-w-7xl mx-auto space-x-16 py-32">
+        {this.state.news &&
+          this.state.news.map((el, index) => {
+            return (
+              <Link to={"/" + el.slug.current} key={el.slug.current}>
+                <div key={index}>
+                  <button className="flex flex-col items-center mb-6">
+                    <img
+                      className="w-96 h-72 rounded-xl"
+                      src={el.mainImage.asset.url}
+                      alt="photo "
+                    />
+                    <p className="text-white mt-5 text-center font-semibold">
+                      {el.title}
+                    </p>
+                    {/* <div className="text-[#828282]">{el.Publishedat}</div> */}
+                  </button>
                 </div>
-              </button>
-            </div>
-          );
-        })}
+              </Link>
+            );
+          })}
       </div>
     );
   }
