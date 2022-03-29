@@ -15,7 +15,7 @@ export default function Footer() {
             smooth={true}
             duration={500}
           >
-            <li>Нүүр</li>
+            <li className="cursor-pointer">Нүүр</li>
           </Link>
           <Link
             activeClass="active"
@@ -24,7 +24,7 @@ export default function Footer() {
             smooth={true}
             duration={500}
           >
-            <li>Бидний тухай</li>
+            <li className="cursor-pointer">Бидний тухай</li>
           </Link>
           <Link
             activeClass="active"
@@ -33,7 +33,7 @@ export default function Footer() {
             smooth={true}
             duration={500}
           >
-            <li>Мэдээ</li>
+            <li className="cursor-pointer">Мэдээ</li>
           </Link>
           <Link
             activeClass="active"
@@ -42,7 +42,7 @@ export default function Footer() {
             smooth={true}
             duration={500}
           >
-            <li>Блог</li>
+            <li className="cursor-pointer">Блог</li>
           </Link>
         </ul>
       </div>

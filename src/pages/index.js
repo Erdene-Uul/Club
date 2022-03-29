@@ -5,10 +5,13 @@ import Info from "../components/Info";
 import { Link } from "react-router-dom";
 import News from "../components/News";
 import CoverEffect from "../components/Cover/CoverEffect";
+import Navbar from "../components/Cover/navbar";
+import Footer from "../components/Footer";
 
 export default function Home(props) {
   return (
     <div className="bg-[#1C1C28] w-full h-full font-Roboto z-10">
+      <Navbar />
       <CoverEffect />
       <AboutUs />
       <Team />
@@ -21,6 +24,7 @@ export default function Home(props) {
         </Link>
       </div>
       <News />
+      <Footer />
     </div>
   );
 }
