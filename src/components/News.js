@@ -28,7 +28,7 @@ export default class News extends Component {
   }
   render() {
     return (
-      <div className="flex max-w-7xl mx-auto space-x-16 py-32" id="news">
+      <div className="flex max-w-screen-2xl mx-auto space-x-16 py-32" id="news">
         <Carousel itemsToShow={3} disableArrowsOnEnd={false}>
           {this.state.news &&
             this.state.news.map((el, index) => {
@@ -39,7 +39,7 @@ export default class News extends Component {
                       <img
                         className="w-96 h-72 rounded-xl"
                         src={el.mainImage.asset.url}
-                        alt="photo "
+                        alt="zurag "
                       />
                       <p className="text-white mt-5 text-center font-semibold">
                         {el.title}
