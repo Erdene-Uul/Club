@@ -24,9 +24,9 @@ export default function AboutUs(props) {
           <div className="text-white">
             <h1 className="font-bold">Бидний тухай</h1>
             <p className="text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              libero tortor elementum eu lectus tellus blandit aliquet. Orci
-              rhoncus aliquet scelerisque odio. Et tempor
+              Lorem ipsum dolor sit, consectetur adipiscing elit. Nulla libero
+              tortor elementum eu lectus tellus blandit aliquet. Orci rhoncus
+              aliquet scelerisque odio. Et tempor
             </p>
           </div>
         </div>
