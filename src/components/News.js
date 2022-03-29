@@ -27,7 +27,7 @@ export default class News extends Component {
   }
   render() {
     return (
-      <div className="flex max-w-7xl mx-auto space-x-16 py-32">
+      <div className="flex max-w-7xl mx-auto space-x-16 py-32" id="news">
         {this.state.news &&
           this.state.news.map((el, index) => {
             return (

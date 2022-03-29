@@ -8,7 +8,7 @@ import effectThree from "../../../images/effect-3.png";
 
 const CoverEffect = (props) => {
   return (
-    <div className="bg-[#909090]/10 w-full h-screen relative m-auto">
+    <div className="bg-[#909090]/10 w-full h-screen relative m-auto" id="home">
       <img src={tsegImg} className="h-32 absolute mt-24 ml-16" />
       <div className="flex">
         <Title />

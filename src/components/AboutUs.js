@@ -3,7 +3,10 @@ import photo from "../images/photo.png";
 
 export default function AboutUs(props) {
   return (
-    <div className="flex flex-row justify-center max-w-6xl mx-auto items-center mt-44 mb-32">
+    <div
+      className="flex flex-row justify-center max-w-6xl mx-auto items-center mt-44 mb-32"
+      id="aboutus"
+    >
       <img src={photo} className="max-w-xl h-[450px] mr-24" />
       <div className="text-white">
         <h1 className="font-bold mx-2 mb-6 text-5xl font-Roboto">

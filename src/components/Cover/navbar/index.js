@@ -1,21 +1,46 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+import Button from "./button";
 
 const Navbar = () => {
   return (
     <nav className="flex items-center w-full m-auto h-12 bg-[#1C1C28] fixed z-50">
       <h2 className="ml-8 text-white font-semibold">TechChain</h2>
       <ul className=" md:flex hidden md:ml-28 lg:ml-64 w-5/12 justify-around items-center text-white font-light text-xs">
-        <Link to="/" className="">
+        <Link
+          activeClass="active"
+          to="home"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
           <li>Нүүр</li>
         </Link>
-        <Link to="/" className="">
+        <Link
+          activeClass="active"
+          to="aboutus"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
           <li>Бидний тухай</li>
         </Link>
-        <Link to="/" className="">
+        <Link
+          activeClass="active"
+          to="news"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
           <li>Мэдээ</li>
         </Link>
-        <Link to="/" className="">
+        <Link
+          activeClass="active"
+          to="news"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
           <li>Блог</li>
         </Link>
         {/* <Link to="/" className="">
@@ -23,11 +48,7 @@ const Navbar = () => {
         </Link> */}
       </ul>
       <div className=" hidden md:w-2/4 lg:w-3/6 md:flex justify-end ">
-        <Link to="/contact">
-          <button className="  mr-16 text-white bg-gradient-to-tr from-buttonColor1 to-buttonColor2 py-1 px-2 rounded-t-3xl rounded-l-3xl text-sm font-normal transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:border-none">
-            Холбоо барих
-          </button>
-        </Link>
+        <Button />
       </div>
     </nav>
   );
