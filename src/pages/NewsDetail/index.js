@@ -3,7 +3,10 @@ import { withRouter, useParams } from "react-router-dom";
 import sanityClient from "../../client";
 import BlockContent from "@sanity/block-content-to-react";
 import { Link } from "react-router-dom";
+import Gif from "./gif";
+
 const NewsDetail = () => {
+  const [show, setShow] = useState(true);
   const [news, setNews] = useState("");
   const { slug } = useParams();
   useEffect(() => {
@@ -24,11 +27,14 @@ const NewsDetail = () => {
       )
       .then((data) => {
         setNews(data[0]);
+        setShow(false);
       });
   }, [slug]);
 
-  return (
-    <div className="bg-[#1C1C28] w-full h-screen">
+  return show ? (
+    <Gif />
+  ) : (
+    <div className="bg-[#1C1C28] w-full h-full">
       <div className="flex justify-end">
         <Link to="/">
           <button className="text-white mt-3 mr-6 bg-emerald-400 px-5 rounded-xl">

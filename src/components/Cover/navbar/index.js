@@ -4,7 +4,7 @@ import Button from "./button";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center w-full m-auto h-12 bg-[#1C1C28] fixed z-50">
+    <nav className="flex items-center w-full m-auto h-12 bg-[#1C1C28] fixed z-40">
       <h2 className="ml-8 text-white font-semibold">TechChain</h2>
       <ul className=" md:flex hidden md:ml-28 lg:ml-64 w-5/12 justify-around items-center text-white font-light text-xs">
         <Link
@@ -47,7 +47,7 @@ const Navbar = () => {
           <li>Холбоо барих</li>
         </Link> */}
       </ul>
-      <div className=" hidden md:w-2/4 lg:w-3/6 md:flex justify-end ">
+      <div className="hidden md:w-2/4 lg:w-3/6 md:flex justify-end ">
         <Button />
       </div>
     </nav>
