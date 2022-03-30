@@ -48,7 +48,8 @@ export default class News extends Component {
                     </button>
                   </div>
                 </Link>
-              );
+                
+              )
             })}
         </Carousel>
       </div>
