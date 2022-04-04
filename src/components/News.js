@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import sanityClient from "../lib/sanity";
 import Carousel from "react-elastic-carousel";
 import { Spinner } from "./Spinner";
+import moment from "moment";
 
 export default function News() {
   const [news, setNews] = useState();
@@ -43,7 +44,9 @@ export default function News() {
                     <p className="text-white mt-5 text-center font-semibold">
                       {el.title}
                     </p>
-                    <div className="text-[#828282]">{el.date}</div>
+                    <div className="text-[#828282]">
+                      {moment(el.date).format("L")}
+                    </div>
                   </button>
                 </div>
               </Link>

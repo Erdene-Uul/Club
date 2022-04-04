@@ -41,7 +41,7 @@ const Navbar = (props) => {
           <li className="cursor-pointer">
             <Link
               activeClass="active"
-              to="home"
+              to="aboutus"
               spy={true}
               smooth={true}
               duration={500}
@@ -52,7 +52,7 @@ const Navbar = (props) => {
           <li className="cursor-pointer">
             <Link
               activeClass="active"
-              to="home"
+              to="news"
               spy={true}
               smooth={true}
               duration={500}
@@ -63,7 +63,7 @@ const Navbar = (props) => {
           <li className="cursor-pointer">
             <Link
               activeClass="active"
-              to="home"
+              to="news"
               spy={true}
               smooth={true}
               duration={500}
