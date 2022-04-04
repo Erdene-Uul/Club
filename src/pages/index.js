@@ -25,6 +25,7 @@ class Home extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
+
   render() {
     return (
       <div className="bg-[#1C1C28] w-full h-full font-Roboto z-10">
