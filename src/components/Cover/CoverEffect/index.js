@@ -5,10 +5,12 @@ import tsegImg from "../../../images/tseg.png";
 import effectOne from "../../../images/effect-1.png";
 import effectTwo from "../../../images/effect-2.png";
 import effectThree from "../../../images/effect-3.png";
+import CoverAnim from "../coveranim";
 
 const CoverEffect = (props) => {
   return (
     <div className="bg-[#909090]/10 w-full h-full   relative m-auto" id="home">
+      <CoverAnim/>
      <div className="max-w-screen-2xl mx-auto p-4
      ">
      <div className="mx-28 ">
