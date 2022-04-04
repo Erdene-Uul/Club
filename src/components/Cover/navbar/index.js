@@ -26,7 +26,7 @@ const Navbar = (props) => {
             toggleSideBar={props.toggleSideBar}
           />
         ) : null}
-        <img src={logo} className="h-12 pl-4" />
+        <img alt="logo" src={logo} className="h-12 pl-4" />
         <ul className=" lg:flex hidden  items-center text-white font-light text-xs space-x-10">
           <li className="cursor-pointer">
             <Link
