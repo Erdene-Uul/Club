@@ -1,17 +1,15 @@
-.gr{
-    background: linear-gradient(30deg, #ff0000, #0000ff);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: text-gradient-bg 5s linear infinite;
-
+.gr {
+  background: linear-gradient(30deg, #9a4dff, #4fe9ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-gradient-bg 5s linear infinite;
 }
 
 @keyframes text-gradient-bg {
-    from {
-    filter: hue-rotate(0);        
-}
-    to {
-        filter: hue-rotate(360deg);       
-
-    }
+  from {
+    filter: hue-rotate(0);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./style.module.css"
 
+// cover effect animation od
 const CoverAnim = () => {
   return (
     <div class="wrapper">
