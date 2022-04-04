@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CoverPhoto from "../../../images/CoverImg.png";
 import Title from "../title";
 import tsegImg from "../../../images/tseg.png";
@@ -9,6 +9,16 @@ import CoverAnim from "../coveranim";
 import ScrollReveal from "scrollreveal";
 
 const CoverEffect = (props) => {
+  useEffect(() => {
+    ScrollReveal().reveal("#coverimg", {
+      delay: 2000,
+      origin: "top",
+      duration: 1000,
+      distance: "500px",
+      scale: 1,
+      easing: "ease",
+    });
+  }, []);
   return (
     <div className="bg-[#909090]/10 w-full h-full   relative m-auto" id="home">
       <CoverAnim />
