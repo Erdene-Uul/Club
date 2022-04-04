@@ -6,7 +6,7 @@ import Uul from "../images/yozla.png";
 export default function Team() {
   return (
     <div>
-      <div className="mx-auto flex flex-row items-center max-w-screen-2xl justify-between">
+      <div className="mx-auto flex flex-row items-center max-w-screen-2xl justify-between px-24">
         <h1 className=" font-bold text-white text-5xl">Манай баг</h1>
         <div className="space-x-14 text-white text-xl">
           <button className=" visited:text-purple-600">Founders</button>

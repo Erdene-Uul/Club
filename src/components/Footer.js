@@ -2,6 +2,7 @@ import React from "react";
 import Icons from "./icons";
 import { Link } from "react-scroll";
 import vector from "../images/Vector.png";
+import logo from "../images/logo.png";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -13,7 +14,7 @@ export default function Footer() {
   return (
     <div className="bg-[#231930]  w-full">
       <div className=" h-28 text-white max-w-screen-2xl mx-auto justify-between items-center flex  px-16">
-        <h1 className=" text-2xl font-bold ">TechChain</h1>
+        <img src={logo} className="h-16" alt="logoo" />
         <ul className="flex space-x-28 font-light text-xl  ">
           <li className="cursor-pointer">
             <Link

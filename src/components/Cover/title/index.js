@@ -1,6 +1,7 @@
 import React from "react";
 import css from "./style.module.css";
 const title = () => {
+
   return (
     <div className=" text-white max-w-xl mt-44">
       <h1

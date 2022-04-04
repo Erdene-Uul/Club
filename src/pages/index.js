@@ -33,8 +33,10 @@ class Home extends Component {
           toggleSideBar={this.toggleSideBar}
         />
         <CoverEffect />
+
         <AboutUs />
         <Team />
+       
         <InfoAnimation />
         <div className="flex justify-center my-20">
           <Link to="/contact">

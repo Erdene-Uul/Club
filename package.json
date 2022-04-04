@@ -16,6 +16,7 @@
     "antd": "^4.19.3",
     "axios": "^0.26.1",
     "dotenv": "^16.0.0",
+    "install": "^0.13.0",
     "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -23,6 +24,7 @@
     "react-router-dom": "^5.3.0",
     "react-scripts": "5.0.0",
     "react-scroll": "^1.8.6",
+    "scrollreveal": "^4.0.9",
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
