@@ -5,9 +5,8 @@ import { Link, useHistory } from "react-router-dom";
 
 export default function Contact(props) {
   const history = useHistory();
-  const baseURL = "http://localhost:9000/api/v1/users";
   const onFinish = (e) => {
-    axios.post(baseURL, e).then(() => {
+    axios.post(`${process.env.REACT_APP_API_URL}/api/v1/users`, e).then(() => {
       history.push("/");
       alert(
         "Таны мэдээллийг хүлээн авлаав Бид тантай удахгүй холбогдох болно!"

@@ -5,10 +5,9 @@ import ScrollReveal from "scrollreveal";
 export default function AboutUs(props) {
   useEffect(() => {
     ScrollReveal().reveal("#about", {
-      delay: 2000,
+      delay: 1000,
       origin: "top",
       duration: 1000,
-      delay: 150,
       distance: "500px",
       scale: 1,
       easing: "ease",
