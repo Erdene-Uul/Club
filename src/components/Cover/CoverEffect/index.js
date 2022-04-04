@@ -11,7 +11,7 @@ const CoverEffect = (props) => {
   return (
     <div className="bg-[#909090]/10 w-full h-full   relative m-auto" id="home">
       <CoverAnim/>
-     <div className="max-w-screen-2xl mx-auto p-4
+     <div className="max-w-screen-2xl mx-auto
      ">
      <div className="mx-28 ">
         <img src={tsegImg} alt="tseg" className="h-32 absolute mt-24 ml-16" />
