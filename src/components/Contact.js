@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Input, Form } from "antd";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 export default function Contact(props) {
   const history = useHistory();
@@ -61,6 +61,11 @@ export default function Contact(props) {
               Илгээх
             </Button>
           </Form.Item>
+          <Link to="/">
+            <button className="rounded-md px-11 mx-auto h-12 w-full mt-3 bg-blue-600 text-red-50">
+              Буцах
+            </button>
+          </Link>
         </Form>
       </div>
     </div>

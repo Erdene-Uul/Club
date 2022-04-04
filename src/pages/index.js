@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import AboutUs from "../components/AboutUs";
 import Team from "../components/Team";
-import InfoAnimation from "../components/infoAnim"
+import InfoAnimation from "../components/infoAnim";
 import { Link } from "react-router-dom";
 import News from "../components/News";
 import CoverEffect from "../components/Cover/CoverEffect";
@@ -22,7 +22,9 @@ class Home extends Component {
   closePopup = () => {
     this.setState({ showPopup: false });
   };
-
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div className="bg-[#1C1C28] w-full h-full font-Roboto z-10">
@@ -33,7 +35,7 @@ class Home extends Component {
         <CoverEffect />
         <AboutUs />
         <Team />
-        <InfoAnimation/>
+        <InfoAnimation />
         <div className="flex justify-center my-20">
           <Link to="/contact">
             <AnimationBtn />

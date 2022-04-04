@@ -6,7 +6,7 @@ import photo from "../images/photo.png";
 export default function AboutUs(props) {
   return (
     <div
-      className="flex flex-row justify-center max-w-6xl mx-auto items-center mt-44 mb-32"
+      className="flex flex-row justify-center max-w-6xl mx-auto items-center mt-44 mb-32 z-50"
       id="aboutus"
     >
       <img src={photo} alt="zurg" className="max-w-xl h-[450px] mr-24" />
