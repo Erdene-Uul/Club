@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import AboutUs from "../components/AboutUs";
-import Team from "../components/Team";
+import Team from "../components/Team/Team";
 import InfoAnimation from "../components/infoAnim";
 import { Link } from "react-router-dom";
 import News from "../components/News";

@@ -8,10 +8,10 @@ const title = () => {
       >
         Huree ICT Технологийн клуб
       </h1>
-      <p className="font-light tracking-widest text-justify mt-4">
+      <p className="font-light tracking-widest text-justify mt-4 z-50">
         Хүрээ дээд сургуулийн CS&SE тэнхэмийн харья клуб. Клуб нь Хүрээ дээд
         сургуулийн оюутнууд өөрсдийгөө технологийн боловсролоор хөгжүүлэхэд
-        зориулагдсан болно.{" "}
+        зориулагдсан болно.
       </p>
     </div>
   );

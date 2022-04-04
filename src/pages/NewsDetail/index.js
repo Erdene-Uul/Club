@@ -41,7 +41,7 @@ const NewsDetail = () => {
     <Gif />
   ) : (
     <div className="bg-[#1C1C28] w-full h-full">
-      <div className="flex justify-end">
+      <div className="flex justify-end ">
         <Link to="/">
           <button className="text-white mt-3 mr-6 bg-emerald-400 px-5 rounded-xl">
             Back
