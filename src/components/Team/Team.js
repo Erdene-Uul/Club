@@ -16,13 +16,23 @@ export default function Team() {
   };
   return (
     <div>
-      <div className="mx-auto flex flex-row items-center max-w-screen-2xl justify-between">
-        <h1 className=" font-bold text-white text-5xl">Манай баг</h1>
-        <div className="space-x-14 text-white text-xl">
-          <button onClick={Founders}>Founders</button>
-          <button onClick={Advisors}>Зөвлөх гишүүд</button>
-          <button onClick={Members}>Гишүүд</button>
-        </div>
+      <div className="mx-auto flex flex-row lg:items-center items-start max-w-screen-2xl justify-between px-4">
+        <h1 className=" font-bold text-white lg:text-5xl text-2xl">
+          Манай баг
+        </h1>
+        <ul className="lg:space-x-14 flex lg:flex-row flex-col lg:space-y-0 space-y-2 text-white lg:text-xl text-sm">
+          <li>
+            <button onClick={Founders}>Founders</button>
+          </li>
+          <li>
+            {" "}
+            <button onClick={Advisors}>Зөвлөх гишүүд</button>
+          </li>
+          <li>
+            {" "}
+            <button onClick={Members}>Гишүүд</button>
+          </li>
+        </ul>
       </div>
       {/* CARDS */}
       {state === 1 ? <Founder /> : null}

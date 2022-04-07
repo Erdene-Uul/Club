@@ -1,5 +1,5 @@
 .universe {
-  width: 100vw;
+  width: 40%;
   height: 50vh;
   margin: auto;
   position: relative;
@@ -16,7 +16,16 @@
   border-radius: 50%;
   z-index: 1;
 }
+/* @media only screen and (max-width: 600px) {
+  .earth{
+    left: calc(50% - 100px);
+    top: calc(60% - 300px);
 
+    height: 200px;
+    width : 200px;
+  }
+ 
+} */
 .moon {
   position: absolute;
   top: calc(90% - 300px);

@@ -15,17 +15,17 @@ export default function AboutUs(props) {
   }, []);
   return (
     <div
-      className="flex flex-row justify-center max-w-6xl mx-auto items-center mt-44 mb-32 z-50"
+      className="flex lg:flex-row flex-col justify-center max-w-6xl mx-auto items-center lg:mt-44 mt-10 mb-32 z-50 md:px-8"
       id="aboutus"
     >
       <img
         src={photo}
         alt="zurg"
-        className="max-w-xl h-[450px] mr-24 "
+        className="lg:max-w-xl lg:h-[450px] sm:h-80 h-64 lg:mt-12 xl:mt-0 xl:mr-24 lg:mr-16 "
         id="about"
       />
       <div className="text-white">
-        <h1 className="font-bold mx-2 mb-6 text-5xl font-Roboto">
+        <h1 className="font-bold lg:mx-2 lg:mb-6 text-center lg:text-left lg:text-5xl lg:my-0 my-10 text-4xl font-Roboto">
           Бидний тухай
         </h1>
         <div
@@ -39,7 +39,7 @@ export default function AboutUs(props) {
           </div>
           <div className="text-white">
             <h1 className="font-bold">Бидний тухай</h1>
-            <p className="text-sm">
+            <p className="text-xs sm:text-sm">
               Хүрээ МХТС-ийн Мэдээллийн Технологийн тэнхимийн дэргэдэх клуб
               бөгөөд Манай клубийн үйл ажиллагаа бол оюутнуудад чиглэсэн
               сургалт, бусад үйл ажиллагааг тогтмол зохион байгуулах юм.
@@ -57,7 +57,7 @@ export default function AboutUs(props) {
           </div>
           <div className="text-white">
             <h1 className="font-bold">Үнэт зүйл</h1>
-            <p className="text-sm">
+            <p className="text-xs sm:text-sm">
               Шинэ санааг илэрхийлэх, судлах,танин мэдэх, бүтээх.Сурж мэдсэн
               зүйлээ бусаддаа хуваалцах, бусдаас суралцах.Mentor, menteen-тэй
               харилцаа холбоо.
@@ -75,7 +75,7 @@ export default function AboutUs(props) {
           </div>
           <div className="text-white">
             <h1 className="font-bold">Алсын хараа</h1>
-            <p className="text-sm">
+            <p className="text-xs  sm:text-sm">
               Оюутан залуусын шинжлэх ухаанч сэтгэлгээг хөгжүүлж, оюутнуудын
               харилцан туршлага солилцох орчинг бүрдүүлж, хаана ч өрсөлдөхүйц
               мэргэшсэн боловсон хүчэн болход бэлтгэгдэн гарах гүүрийн нэг байх

@@ -37,7 +37,7 @@ class Home extends Component {
 
         <AboutUs />
         <Team />
-       
+
         <InfoAnimation />
         <div className="flex justify-center my-20">
           <Link to="/contact">
