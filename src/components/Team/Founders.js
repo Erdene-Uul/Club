@@ -5,10 +5,20 @@ import Uul from "../../images/yozla.png";
 import Carousel from "react-elastic-carousel";
 
 const Founder = () => {
+  const breakpoints = [
+    { width: 1, itemsToShow: 1, itemPadding: [10, 10] },
+    { width: 600, itemsToShow: 2, itemsToScroll: 2, itemPadding: [10, 20] },
+    { width: 850, itemsToShow: 3, itemsToScroll: 2, itemPadding: [10, 20] },
+    { width: 1000, itemsToShow: 3.5, itemsToScroll: 2, itemPadding: [10, 30] },
+  ];
   return (
     <div className="max-w-6xl mx-auto my-16">
-      <div className=" lg:flex justify-center space-x-12 hidden">
-        <Carousel itemsToShow={1}>
+      <div className=" lg:flex justify-center space-x-12 ">
+        <Carousel
+          disableArrowsOnEnd={true}
+          breakPoints={breakpoints}
+          itemPadding={[10, 30]}
+        >
           <div className="flex flex-col items-center px-5 bg-[#4392F5] w-[300px] h-[370px] rounded-[40px]">
             <img className="mt-6 mb-4 w-28 h-28" src={Munguu} alt="munguu" />
             <p className="font-light text-white text-lg">Б.Мөнгөн-Эрдэнэ</p>
