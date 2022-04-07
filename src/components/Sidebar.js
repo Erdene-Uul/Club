@@ -82,8 +82,9 @@ const Sidebar = (props) => {
         <ul className="flex justify-center">
           <li>
             <Link
+              onClick={props.toggleSideBar}
               to={{
-                pathname: "",
+                pathname: "https://www.facebook.com/Basarmn-110141001402215/",
               }}
               target="_blanck"
             >
@@ -96,28 +97,34 @@ const Sidebar = (props) => {
             </Link>
           </li>
           <li>
-            <FontAwesomeIcon
-              icon={faGithub}
-              size="1x"
-              color="white"
-              className="hover:text-teal-500 p-5 rounded-lg"
-            />
+            <Link onClick={props.toggleSideBar}>
+              <FontAwesomeIcon
+                icon={faGithub}
+                size="1x"
+                color="white"
+                className="hover:text-teal-500 p-5 rounded-lg"
+              />
+            </Link>
           </li>
           <li>
-            <FontAwesomeIcon
-              icon={faInstagram}
-              size="1x"
-              color="white"
-              className="hover:text-[#bc2a8d] p-5 rounded-lg"
-            />
+            <Link onClick={props.toggleSideBar}>
+              <FontAwesomeIcon
+                icon={faInstagram}
+                size="1x"
+                color="white"
+                className="hover:text-[#bc2a8d] p-5 rounded-lg"
+              />
+            </Link>
           </li>
           <li>
-            <FontAwesomeIcon
-              icon={faDiscord}
-              size="1x"
-              color="white"
-              className="hover:text-sky-600 p-5 rounded-lg"
-            />
+            <Link onClick={props.toggleSideBar}>
+              <FontAwesomeIcon
+                icon={faDiscord}
+                size="1x"
+                color="white"
+                className="hover:text-sky-600 p-5 rounded-lg"
+              />
+            </Link>
           </li>
         </ul>
       </div>
