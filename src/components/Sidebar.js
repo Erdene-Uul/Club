@@ -30,6 +30,7 @@ const Sidebar = (props) => {
         <ul className="mx-8 mb-4 space-y-4 text-sm text-white">
           <li className="cursor-pointer">
             <Link
+              onClick={props.toggleSideBar}
               activeClass="active"
               to="home"
               spy={true}
@@ -41,6 +42,7 @@ const Sidebar = (props) => {
           </li>
           <li className="cursor-pointer">
             <Link
+              onClick={props.toggleSideBar}
               activeClass="active"
               to="about"
               spy={true}
@@ -52,6 +54,7 @@ const Sidebar = (props) => {
           </li>
           <li className="cursor-pointer">
             <Link
+              onClick={props.toggleSideBar}
               activeClass="active"
               to="news"
               spy={true}
@@ -63,6 +66,7 @@ const Sidebar = (props) => {
           </li>
           <li className="cursor-pointer">
             <Link
+              onClick={props.toggleSideBar}
               activeClass="active"
               to="news"
               spy={true}
