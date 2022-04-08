@@ -9,6 +9,7 @@ import Navbar from "../components/Cover/navbar";
 import Footer from "../components/Footer";
 import AnimationBtn from "../components/button";
 
+
 class Home extends Component {
   state = {
     showPopup: false,
@@ -37,6 +38,7 @@ class Home extends Component {
 
         <AboutUs />
         <Team />
+  
 
         <InfoAnimation />
         <div className="flex justify-center my-20">

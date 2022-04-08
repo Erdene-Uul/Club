@@ -1,7 +1,7 @@
 import React from "react";
 import Munguu from "../../images/4.png";
 import Uuganaa from "../../images/uram.png";
-import L from "../../images/L.png";
+import Uul from "../../images/yozla.png";
 import Carousel from "react-elastic-carousel";
 
 const Founder = () => {
@@ -11,6 +11,7 @@ const Founder = () => {
     { width: 850, itemsToShow: 3, itemsToScroll: 2, itemPadding: [10, 20] },
     { width: 1000, itemsToShow: 3.5, itemsToScroll: 2, itemPadding: [10, 30] },
   ];
+
   return (
     <div className="max-w-6xl mx-auto my-16">
       <div className=" lg:flex justify-center space-x-12 ">
@@ -30,9 +31,9 @@ const Founder = () => {
             </p>
           </div>
           <div className="flex flex-col items-center px-5 bg-[#56CB7A] w-[300px] h-[370px] rounded-[40px]">
-            <img className="mt-6 mb-4 w-28 h-28" src={L} alt="uul" />
+            <img className="mt-6 mb-4 w-28 h-28" src={Uul} alt="uul" />
             <p className="font-light  text-white text-lg text-center">
-              З. Эрдэнэ-Уул <br></br>(also known as L)
+              З. Эрдэнэ-Уул 
             </p>
             <p className="font-bold text-base mb-8 text-center">
               TechChain клубын <span className="block">Co-Founder</span>
