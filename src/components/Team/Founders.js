@@ -20,8 +20,8 @@ const Founder = () => {
           breakPoints={breakpoints}
           itemPadding={[10, 30]}
         >
-          <div className="flex flex-col items-center px-5 bg-[#4392F5] w-[300px] h-[370px] rounded-[40px]">
-            <img className="mt-6 mb-4 w-28 h-28" src={Munguu} alt="munguu" />
+          <div className="flex flex-col items-center px-5 bg-[#4392F5] w-[300px] h-[370px] rounded-[40px] transform transition duration-500 hover:scale-110 ">
+            <img className="mt-6 mb-4 w-28 h-28 " src={Munguu} alt="munguu" />
             <p className="font-light text-white text-lg">Б.Мөнгөн-Эрдэнэ</p>
             <p className="font-bold text-base mb-8 text-center">
               TechChain клубын <span className="block">Co-Founder</span>
