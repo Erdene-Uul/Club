@@ -18,36 +18,62 @@ const Member = () => {
         breakPoints={breakpoints}
         itemPadding={[10, 30]}
       >
-        <div className="flex flex-col items-center px-5 bg-[#f543a2] w-[300px] h-[370px] rounded-[40px]">
-          <img className="mt-6 mb-4 w-28 h-28" src={img1} alt="munguu" />
-          <p className="font-light text-white text-lg">Jenny</p>
-          <p className="font-bold text-base mb-8 text-center">
-            TechChain клубын <span className="block">Member</span>
-          </p>
-          <p className="text-sm text-center">
-            Хүрээ дээд сургуулийн компьютерийн ухааны 42-р дамжааны оюутан.
-          </p>
-        </div>
-        <div className="flex flex-col items-center px-5 bg-[#cb5656] w-[300px] h-[370px] rounded-[40px]">
-          <img className="mt-6 mb-4 w-28 h-28" src={img2} alt="uul" />
-          <p className="font-light  text-white text-lg">Robert</p>
-          <p className="font-bold text-base mb-8 text-center">
-            TechChain клубын <span className="block">Member</span>
-          </p>
-          <p className="text-sm text-center">
-            Хүрээ дээд сургуулийн компьютерийн ухааны 213-р дамжааны оюутан.
-          </p>
-        </div>
-        <div className="flex flex-col items-center px-5 bg-[#cfd73f] w-[300px] h-[370px] rounded-[40px]">
-          <img className="mt-6 mb-4 w-28 h-28" src={img3} alt="uram " />
-          <p className="font-light  text-white text-lg">Tom</p>
-          <p className="font-bold text-base mb-8 text-center">
-            TechChain клубын <span className="block">Member</span>
-          </p>
-          <p className="text-sm text-center">
-            Хүрээ дээд сургуулийн компьютерийн ухааны 31-р дамжааны оюутан.
-          </p>
-        </div>
+
+     <div class="flex items-center justify-center flex-col bg-gray-700 p-4 rounded-lg w-48 space-y-5">
+         <img class="rounded-full border-gray-100 shadow-sm w-24 h-24" src="https://randomuser.me/api/portraits/women/43.jpg" alt="user image" />
+        <h1 class="text-gray-50 font-semibold">Гансүх Болормаа</h1>
+        <h3 class="text-xl">CS1A</h3>
+     </div>
+
+     <div class="flex items-center justify-center flex-col bg-gray-700 p-4 rounded-lg w-48 space-y-5">
+         <img class="rounded-full border-gray-100 shadow-sm w-24 h-24" src="https://randomuser.me/api/portraits/women/43.jpg" alt="user image" />
+        <h1 class="text-gray-50 font-semibold">Гансүх Болормаа</h1>
+        <h3 class="text-xl">CS1A</h3>
+     </div>
+     
+     <div class="flex items-center justify-center flex-col bg-gray-700 p-4 rounded-lg w-48 space-y-5">
+         <img class="rounded-full border-gray-100 shadow-sm w-24 h-24" src="https://randomuser.me/api/portraits/women/43.jpg" alt="user image" />
+        <h1 class="text-gray-50 font-semibold">Гансүх Болормаа</h1>
+        <h3 class="text-xl">CS1A</h3>
+     </div>
+     
+
+     <div class="flex items-center justify-center flex-col bg-gray-700 p-4 rounded-lg w-48 space-y-5">
+         <img class="rounded-full border-gray-100 shadow-sm w-24 h-24" src="https://randomuser.me/api/portraits/women/43.jpg" alt="user image" />
+        <h1 class="text-gray-50 font-semibold">Гансүх Болормаа</h1>
+        <h3 class="text-xl">CS1A</h3>
+     </div>
+     
+
+     <div class="flex items-center justify-center flex-col bg-gray-700 p-4 rounded-lg w-48 space-y-5">
+         <img class="rounded-full border-gray-100 shadow-sm w-24 h-24" src="https://randomuser.me/api/portraits/women/43.jpg" alt="user image" />
+        <h1 class="text-gray-50 font-semibold">Гансүх Болормаа</h1>
+        <h3 class="text-xl">CS1A</h3>
+     </div>
+     
+
+     <div class="flex items-center justify-center flex-col bg-gray-700 p-4 rounded-lg w-48 space-y-5">
+         <img class="rounded-full border-gray-100 shadow-sm w-24 h-24" src="https://randomuser.me/api/portraits/women/43.jpg" alt="user image" />
+        <h1 class="text-gray-50 font-semibold">Гансүх Болормаа</h1>
+        <h3 class="text-xl">CS1A</h3>
+     </div>
+     
+
+     <div class="flex items-center justify-center flex-col bg-gray-700 p-4 rounded-lg w-48 space-y-5">
+         <img class="rounded-full border-gray-100 shadow-sm w-24 h-24" src="https://randomuser.me/api/portraits/women/43.jpg" alt="user image" />
+        <h1 class="text-gray-50 font-semibold">Гансүх Болормаа</h1>
+        <h3 class="text-xl">CS1A</h3>
+     </div>
+     
+
+     <div class="flex items-center justify-center flex-col bg-gray-700 p-4 rounded-lg w-48 space-y-5">
+         <img class="rounded-full border-gray-100 shadow-sm w-24 h-24" src="https://randomuser.me/api/portraits/women/43.jpg" alt="user image" />
+        <h1 class="text-gray-50 font-semibold">Гансүх Болормаа</h1>
+        <h3 class="text-xl">CS1A</h3>
+     </div>
+     
+     
+    
       </Carousel>
     </div>
   );
