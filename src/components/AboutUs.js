@@ -5,8 +5,16 @@ import ScrollReveal from "scrollreveal";
 export default function AboutUs(props) {
   useEffect(() => {
     ScrollReveal().reveal("#about", {
-      delay: 1000,
+      delay: 500,
       origin: "top",
+      duration: 1000,
+      distance: "500px",
+      scale: 1,
+      easing: "ease",
+    });
+    ScrollReveal().reveal("#about2", {
+      delay: 500,
+      origin: "right",
       duration: 1000,
       distance: "500px",
       scale: 1,
@@ -24,7 +32,7 @@ export default function AboutUs(props) {
         className="lg:max-w-xl lg:h-[450px] sm:h-80 h-64 lg:mt-12 xl:mt-0 xl:mr-24 lg:mr-16 "
         id="about"
       />
-      <div className="text-white">
+      <div className="text-white" id="about2">
         <h1 className="font-bold lg:mx-2 lg:mb-6 text-center lg:text-left lg:text-5xl lg:my-0 my-10 text-4xl font-Roboto">
           Бидний тухай
         </h1>

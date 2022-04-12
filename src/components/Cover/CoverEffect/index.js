@@ -11,7 +11,7 @@ import ScrollReveal from "scrollreveal";
 const CoverEffect = (props) => {
   useEffect(() => {
     ScrollReveal().reveal("#coverimg", {
-      delay: 1000,
+      delay: 500,
       origin: "top",
       duration: 1000,
       distance: "500px",
