@@ -15,7 +15,7 @@ export default function Icons() {
         <li>
           <Link
             to={{
-              pathname: "https://www.facebook.com/Basarmn-110141001402215/",
+              pathname: "https://www.facebook.com/HureeChainClub",
             }}
             target="_blanck"
           >
@@ -28,20 +28,34 @@ export default function Icons() {
           </Link>
         </li>
         <li>
-          <FontAwesomeIcon
-            icon={faGithub}
-            size="2x"
-            color="white"
-            className="hover:text-teal-500"
-          />
+          <Link
+            to={{
+              pathname: "https://github.com/Munguu0623",
+            }}
+            target="_blanck"
+          >
+            <FontAwesomeIcon
+              icon={faGithub}
+              size="2x"
+              color="white"
+              className="hover:text-teal-500"
+            />
+          </Link>
         </li>
         <li>
-          <FontAwesomeIcon
-            icon={faInstagram}
-            size="2x"
-            color="white"
-            className="hover:text-[#bc2a8d]"
-          />
+          <Link
+            to={{
+              pathname: "https://www.instagram.com/hureechain/",
+            }}
+            target="_blanck"
+          >
+            <FontAwesomeIcon
+              icon={faInstagram}
+              size="2x"
+              color="white"
+              className="hover:text-[#bc2a8d]"
+            />
+          </Link>
         </li>
         <li>
           <FontAwesomeIcon
