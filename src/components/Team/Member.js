@@ -18,7 +18,7 @@ const Member = () => {
           <img
             class="rounded-full border-gray-100 shadow-sm w-24 h-24"
             src="https://randomuser.me/api/portraits/women/43.jpg"
-            alt="user image"
+            alt="user image8"
           />
           <h1 class="text-gray-50 font-semibold">Гансүх Болормаа</h1>
           <h3 class="text-xl">CS1A</h3>
