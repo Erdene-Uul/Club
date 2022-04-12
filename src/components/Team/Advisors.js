@@ -1,70 +1,156 @@
 import React from "react";
-import Carousel from "react-elastic-carousel";
 import Azaa from "../../images/AzbayarMunkhbayar.jpg";
 import Youngmi from "../../images/YoungMiKim.jpg";
 import Shim from "../../images/KwangCheolShin.jpg";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
 
+
+import { Pagination } from "swiper";
 const Advisor = () => {
-  const breakpoints = [];
   return (
-    <div className="my-16 flex justify-center space-x-12 max-w-6xl mx-auto">
-      <Carousel
-        disableArrowsOnEnd={true}
-        breakPoints={breakpoints}
-        itemPadding={[10, 30]}
+    <div className="mx-24 my-32">
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={10}
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
       >
-        <div className="flex gap-8">
-          {/* Youngmi techear */}
-          <div class=" flex items-center justify-center">
-            <a
-              class="hover:bg-gray-800 delay-50 duration-100 bg-gray-900 p-5 rounded-lg w-60 group"
-              href=""
-            >
-              <img src={Youngmi} class="w-full rounded shadow" />
+        <div className="my-16 flex justify-center space-x-12 max-w-6xl mx-auto">
+          <div className="flex gap-8">
+            {/* Youngmi techear */}
+            <SwiperSlide>
+              <div className=" flex items-center justify-center">
+                <div
+                  className="hover:bg-gray-800 delay-50 duration-100 bg-gray-900 p-5 rounded-lg w-60 group"
+                  href=""
+                >
+                  <img src={Youngmi} className="w-full rounded shadow" />
 
-              <h3 class="text-gray-200 font-bold mt-5"> PHD, КИМ ЮУНГМИ</h3>
+                  <h3 className="text-gray-200 font-bold mt-5">
+                    {" "}
+                    PHD, КИМ ЮУНГМИ
+                  </h3>
 
-              <p class="text-gray-400 font-light mt-2 text-xs">
-                {" "}
-                Компьютерийн Шинжилэх Ухааны тэнхимийн эрхлэгч багш
-              </p>
-            </a>
-          </div>
-          {/* Azbayar */}
-          <div class=" flex items-center justify-center">
-            <a
-              class="hover:bg-gray-800 delay-50 duration-100 bg-gray-900 p-5 rounded-lg w-60 group"
-              href=""
-            >
-              <img src={Azaa} class="w-full rounded shadow" />
+                  <p className="text-gray-400 font-light mt-2 text-xs">
+                    {" "}
+                    Компьютерийн Шинжилэх Ухааны тэнхимийн эрхлэгч багш
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
 
-              <h3 class="text-gray-200 font-bold mt-5"> МАСТЕР М. АЗБАЯР</h3>
+            {/* Azbayar */}
+            <SwiperSlide>
+              <div className=" flex items-center justify-center">
+                <div
+                  className="hover:bg-gray-800 delay-50 duration-100 bg-gray-900 p-5 rounded-lg w-60 group"
+                  href=""
+                >
+                  <img src={Azaa} className="w-full rounded shadow" />
 
-              <p class="text-gray-400 font-light mt-2 text-xs">
-                {" "}
-                Компьютерийн Шинжилэх Ухааны тэнхимийн багш
-              </p>
-            </a>
-          </div>
+                  <h3 className="text-gray-200 font-bold mt-5">
+                    {" "}
+                    МАСТЕР М. АЗБАЯР
+                  </h3>
 
-          {/* Shim */}
-          <div class=" flex items-center justify-center">
-            <a
-              class="hover:bg-gray-800 delay-50 duration-100 bg-gray-900 p-5 rounded-lg w-60 group"
-              href=""
-            >
-              <img src={Shim} class="w-full rounded shadow" />
+                  <p className="text-gray-400 font-light mt-2 text-xs">
+                    {" "}
+                    Компьютерийн Шинжилэх Ухааны тэнхимийн багш
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
 
-              <h3 class="text-gray-200 font-bold mt-5"> PHD, ШИН КВАНГЧЁОЛ</h3>
+            {/* Shim */}
+            <SwiperSlide>
+              <div className=" flex items-center justify-center">
+                <div
+                  className="hover:bg-gray-800 delay-50 duration-100 bg-gray-900 p-5 rounded-lg w-60 group"
+                  href=""
+                >
+                  <img src={Shim} className="w-full rounded shadow" />
 
-              <p class="text-gray-400 font-light mt-2 text-xs">
-                {" "}
-                Компьютерийн Шинжилэх Ухааны тэнхимийн багш
-              </p>
-            </a>
+                  <h3 className="text-gray-200 font-bold mt-5">
+                    {" "}
+                    PHD, ШИН КВАНГЧЁОЛ
+                  </h3>
+
+                  <p className="text-gray-400 font-light mt-2 text-xs">
+                    {" "}
+                    Компьютерийн Шинжилэх Ухааны тэнхимийн багш
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            {/* Otgoo */}
+            {/* Shim */}
+            <SwiperSlide>
+              <div className=" flex items-center justify-center">
+                <div
+                  className="hover:bg-gray-800 delay-50 duration-100 bg-gray-900 p-5 rounded-lg w-60 group"
+                  href=""
+                >
+                  <img src={Shim} className="w-full rounded shadow" />
+
+                  <h3 className="text-gray-200 font-bold mt-5">
+                    {" "}
+                    PHD, ШИН КВАНГЧЁОЛ
+                  </h3>
+
+                  <p className="text-gray-400 font-light mt-2 text-xs">
+                    {" "}
+                    Компьютерийн Шинжилэх Ухааны тэнхимийн багш
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            {/* Otgoo */}
+            {/* Shim */}
+            <SwiperSlide>
+              <div className=" flex items-center justify-center">
+                <div
+                  className="hover:bg-gray-800 delay-50 duration-100 bg-gray-900 p-5 rounded-lg w-60 group"
+                  href=""
+                >
+                  <img src={Shim} className="w-full rounded shadow" />
+
+                  <h3 className="text-gray-200 font-bold mt-5">
+                    {" "}
+                    PHD, ШИН КВАНГЧЁОЛ
+                  </h3>
+
+                  <p className="text-gray-400 font-light mt-2 text-xs">
+                    {" "}
+                    Компьютерийн Шинжилэх Ухааны тэнхимийн багш
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
           </div>
         </div>
-      </Carousel>
+      </Swiper>
     </div>
   );
 };
