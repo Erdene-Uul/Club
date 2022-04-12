@@ -7,13 +7,12 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
-
 import { Pagination } from "swiper";
 
 const Founder = () => {
   return (
-    <div className="sm:max-w-6xl sm:mx-auto sm:my-16 mx-36 my-32">
-      <div className=" lg:flex justify-center space-x-12 ">
+    <div className="max-w-6xl mx-auto my-16 ">
+      <div className=" flex justify-center items-center ">
         <Swiper
           slidesPerView={1}
           spaceBetween={1}

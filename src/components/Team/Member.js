@@ -3,8 +3,8 @@ import React from "react";
 const Member = () => {
   return (
     <div className=" my-16 mx-16 flex justify-end">
-      <div className=" mx-auto grid lg:grid-cols-4 sm:grid-cols-2 gap-4  ">
-        <div className="flex items-center justify-center flex-col bg-gray-700 p-4 rounded-lg w-48 space-y-5">
+      <div className=" mx-auto max-w-4xl flex flex-wrap justify-center space-x-4 space-y-4">
+        <div className="flex items-center justify-center flex-col bg-gray-700 mt-4 ml-4 p-2 rounded-lg w-44 ">
           <img
             className="rounded-full border-gray-100 shadow-sm w-24 h-24"
             src="https://randomuser.me/api/portraits/women/43.jpg"
@@ -14,7 +14,7 @@ const Member = () => {
           <h3 className="text-xl">CS1A</h3>
         </div>
 
-        <div className="flex items-center justify-center flex-col bg-gray-700 p-4 rounded-lg w-48 space-y-5">
+        <div className="flex items-center justify-center flex-col bg-gray-700  p-2 rounded-lg w-44  ">
           <img
             className="rounded-full border-gray-100 shadow-sm w-24 h-24"
             src="https://randomuser.me/api/portraits/women/43.jpg"
@@ -24,7 +24,7 @@ const Member = () => {
           <h3 className="text-xl">CS1A</h3>
         </div>
 
-        <div className="flex items-center justify-center flex-col bg-gray-700 p-4 rounded-lg w-48 space-y-5">
+        <div className="flex items-center justify-center flex-col bg-gray-700  p-2 rounded-lg w-44  ">
           <img
             className="rounded-full border-gray-100 shadow-sm w-24 h-24"
             src="https://randomuser.me/api/portraits/women/43.jpg"
@@ -34,7 +34,7 @@ const Member = () => {
           <h3 className="text-xl">CS1A</h3>
         </div>
 
-        <div className="flex items-center justify-center flex-col bg-gray-700 p-4 rounded-lg w-48 space-y-5">
+        <div className="flex items-center justify-center flex-col bg-gray-700  p-2 rounded-lg w-44  ">
           <img
             className="rounded-full border-gray-100 shadow-sm w-24 h-24"
             src="https://randomuser.me/api/portraits/women/43.jpg"
@@ -44,7 +44,7 @@ const Member = () => {
           <h3 className="text-xl">CS1A</h3>
         </div>
 
-        <div className="flex items-center justify-center flex-col bg-gray-700 p-4 rounded-lg w-48 space-y-5">
+        <div className="flex items-center justify-center flex-col bg-gray-700  p-2 rounded-lg w-44  ">
           <img
             className="rounded-full border-gray-100 shadow-sm w-24 h-24"
             src="https://randomuser.me/api/portraits/women/43.jpg"
@@ -54,7 +54,7 @@ const Member = () => {
           <h3 className="text-xl">CS1A</h3>
         </div>
 
-        <div className="flex items-center justify-center flex-col bg-gray-700 p-4 rounded-lg w-48 space-y-5">
+        <div className="flex items-center justify-center flex-col bg-gray-700  p-2 rounded-lg w-44  ">
           <img
             className="rounded-full border-gray-100 shadow-sm w-24 h-24"
             src="https://randomuser.me/api/portraits/women/43.jpg"
@@ -64,7 +64,7 @@ const Member = () => {
           <h3 className="text-xl">CS1A</h3>
         </div>
 
-        <div className="flex items-center justify-center flex-col bg-gray-700 p-4 rounded-lg w-48 space-y-5">
+        <div className="flex items-center justify-center flex-col bg-gray-700  p-2 rounded-lg w-44  ">
           <img
             className="rounded-full border-gray-100 shadow-sm w-24 h-24"
             src="https://randomuser.me/api/portraits/women/43.jpg"
@@ -74,7 +74,7 @@ const Member = () => {
           <h3 className="text-xl">CS1A</h3>
         </div>
 
-        <div className="flex items-center justify-center flex-col bg-gray-700 p-4 rounded-lg w-48 space-y-5">
+        <div className="flex items-center justify-center flex-col bg-gray-700  p-2 rounded-lg w-44  ">
           <img
             className="rounded-full border-gray-100 shadow-sm w-24 h-24"
             src="https://randomuser.me/api/portraits/women/43.jpg"

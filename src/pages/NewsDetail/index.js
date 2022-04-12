@@ -5,16 +5,7 @@ import BlockContent from "@sanity/block-content-to-react";
 import { Link } from "react-router-dom";
 import moment from "moment";
 import Gif from "./gif";
-
-// const serializers = {
-//   types: {
-//     code: (props) => (
-//       <pre data-language={props.node.language}>
-//         <code>{props.node.code}</code>
-//       </pre>
-//     ),
-//   },
-// };
+import "./style.module.css";
 
 const NewsDetail = () => {
   const [show, setShow] = useState(true);
@@ -65,13 +56,18 @@ const NewsDetail = () => {
           </button>
         </Link>
       </div>
-      <div className="flex flex-col justify-center items-center max-w-screen-2xl mx-auto">
+      <div className="flex flex-col justify-center items-center max-w-screen-2xl mx-auto sm:px-10 px-4">
         {/* <div>asdjlkfsasdf asdf asdjlkfs asdjlkfsasdf</div>
       <div>asdjlkfsasdf asdf asdjlkfs asdjlkfsasdf</div> */}
-        <div className="text-white text-[36px]">{news.title}</div>
-        <div className="text-[#828282]">{moment(news.date).format("L")}</div>
+        <div className="text-white text-center lg:text-[36px] text-lg">
+          {news.title}
+        </div>
+
+        <div className="text-[#828282] my-2 sm:text-base text-xs">
+          {moment(news.date).format("L")}
+        </div>
         {/* <img className="w-[913px] h-[480px]" src={news.mainImage.asset.url} /> */}
-        <div className="text-white px-36 mx-36 ">
+        <div className="text-white mx-auto max-w-3xl mt-4 sm:text-base text-sm">
           <BlockContent
             blocks={news.body}
             // serializers={serializers}
