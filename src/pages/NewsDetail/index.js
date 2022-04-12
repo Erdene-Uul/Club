@@ -43,8 +43,8 @@ const NewsDetail = () => {
     <div className="bg-[#1C1C28] w-full h-full">
       <div className="flex justify-end ">
         <Link to="/">
-          <button class="relative group overflow-hidden px-6 h-12 rounded-full flex space-x-2 items-center  bg-gradient-to-tr from-buttonColor1 to-buttonColor2">
-            <span class="relative text-sm text-white">Буцах</span>
+          <button class="relative group overflow-hidden px-4 h-10 rounded-full flex space-x-2 items-center  bg-gradient-to-tr from-buttonColor1 to-buttonColor2 my-4 mx-6">
+            <span class="relative text-sm text-white ">Буцах</span>
             <div class="flex items-center -space-x-3 translate-x-3">
               <div class="w-2.5 h-[1.6px] rounded bg-white origin-left scale-x-0 transition duration-300 group-hover:scale-x-100"></div>
               <svg
