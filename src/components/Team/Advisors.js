@@ -42,16 +42,6 @@ const Advisor = () => {
                 image="YoungMiKim"
               />
             </SwiperSlide>
-
-            {/* Azbayar */}
-            <SwiperSlide>
-              <ClubAdvisors
-                name="МАСТЕР М. АЗБАЯР"
-                about=" Компьютерийн Шинжилэх Ухааны тэнхимийн багш"
-                image="AzbayarMunkhbayar"
-              />
-            </SwiperSlide>
-
             {/* Shim */}
             <SwiperSlide>
               <ClubAdvisors
@@ -60,11 +50,21 @@ const Advisor = () => {
                 image="KwangCheolShin"
               />
             </SwiperSlide>
+            {/* Azbayar */}
             <SwiperSlide>
               <ClubAdvisors
-                name="PHD, ШИН КВАНГЧЁОЛ"
-                about="Компьютерийн Шинжилэх Ухааны тэнхимийн багш"
-                image="KwangCheolShin"
+                name="MS, М. АЗБАЯР"
+                about=" Компьютерийн Шинжилэх Ухааны тэнхимийн багш"
+                image="AzbayarMunkhbayar"
+              />
+            </SwiperSlide>
+
+            {/* Отгон-баатар */}
+            <SwiperSlide>
+              <ClubAdvisors
+                name="MS, Ю. ОТГОН-БААТАР"
+                about="Мэдээлэл холбооны тэнхимийн эрхлэгч"
+                image="otgonbaatarYura"
               />
             </SwiperSlide>
 
