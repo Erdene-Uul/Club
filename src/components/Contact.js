@@ -2,15 +2,18 @@ import React from "react";
 import { Button, Input, Form } from "antd";
 import axios from "axios";
 import { Link, useHistory } from "react-router-dom";
+import { Spinner } from "./Spinner";
 
-export default function Contact(props) {
+export default function Contact() {
   const history = useHistory();
+  const [loading, setLoading] = React.useState(false);
   const onFinish = (e) => {
+    setLoading(true);
     axios.post(`${process.env.REACT_APP_API_URL}/api/v1/users`, e).then(() => {
       history.push("/");
       alert(
         "Таны мэдээллийг хүлээн авлаав Бид тантай удахгүй холбогдох болно!"
-      );
+      ).then(() => setLoading(false));
     });
   };
   return (
@@ -50,21 +53,30 @@ export default function Contact(props) {
               required
             ></Input.TextArea>
           </Form.Item>
-          <Form.Item>
-            <Button
-              className="rounded-md px-11 mx-auto h-12 w-full mt-3 bg-blue-600 text-red-50"
-              block
-              type="primary"
-              htmlType="submit"
-            >
-              Илгээх
-            </Button>
-          </Form.Item>
-          <Link to="/">
-            <button className="rounded-md px-11 mx-auto h-12 w-full mt-3 bg-blue-600 text-red-50">
-              Буцах
-            </button>
-          </Link>
+          <div className="flex justify-between">
+            <Form.Item>
+              <Button
+                className="rounded-md h-12 w-32 mt-3 bg-blue-600 text-red-50"
+                block
+                type="primary"
+                htmlType="submit"
+                disabled={loading}
+              >
+                {loading ? (
+                  <div className="flex items-center disabled:bg-orange-700">
+                    <Spinner />
+                  </div>
+                ) : (
+                  <p>Илгээх</p>
+                )}
+              </Button>
+            </Form.Item>
+            <Link to="/">
+              <Button className="rounded-md h-12 w-32 mt-3 bg-blue-600 text-red-50">
+                Буцах
+              </Button>
+            </Link>
+          </div>
         </Form>
       </div>
     </div>
