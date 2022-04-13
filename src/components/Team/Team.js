@@ -3,8 +3,6 @@ import Founder from "./Founders";
 import Advisor from "./Advisors";
 import Member from "./Member";
 
-const bgColor = "gradient-to-tr from-buttonColor1 to-buttonColor2";
-
 export default function Team() {
   const [state, setState] = useState(1);
   const Founders = () => {
@@ -24,7 +22,7 @@ export default function Team() {
         </h1>
         <ul className="lg:space-x-14 flex lg:flex-row flex-col lg:space-y-0 space-y-2 text-white lg:text-xl text-sm">
           <li>
-            {state == 1 ? (
+            {state === 1 ? (
               <button
                 className="p-3 bg-gradient-to-tr from-buttonColor1 to-buttonColor2 rounded-full"
                 onClick={Founders}

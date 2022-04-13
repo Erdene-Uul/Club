@@ -1,7 +1,4 @@
 import React from "react";
-import Azaa from "../../images/AzbayarMunkhbayar.jpg";
-import Youngmi from "../../images/YoungMiKim.jpg";
-import Shim from "../../images/KwangCheolShin.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";

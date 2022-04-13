@@ -1,6 +1,4 @@
 import React from "react";
-import Uuganaa from "../../images/uram.png";
-import Uul from "../../images/yozla.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ClubFounders from "../ClubFounders";
 import "swiper/css";
@@ -12,7 +10,7 @@ import { Pagination } from "swiper";
 const Founder = () => {
   return (
     <div className="max-w-6xl mx-auto mt-16 ">
-      <div className=" flex justify-center items-center ">
+      <div className=" flexjustify-center items-center">
         <Swiper
           slidesPerView={1}
           spaceBetween={1}
