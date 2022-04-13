@@ -1,88 +1,18 @@
 import React from "react";
+import ClubMembers from "../ClubMembers";
 
 const Member = () => {
   return (
-    <div className=" my-16 mx-16 flex justify-end">
-      <div className=" mx-auto max-w-4xl flex flex-wrap justify-center space-x-4 space-y-4">
-        <div className="flex items-center justify-center flex-col bg-gray-700 mt-4 ml-4 p-2 rounded-lg w-44 ">
-          <img
-            className="rounded-full border-gray-100 shadow-sm w-24 h-24"
-            src="https://randomuser.me/api/portraits/women/43.jpg"
-            alt="user image7"
-          />
-          <h1 className="text-gray-50 font-semibold">Гансүх Болормаа</h1>
-          <h3 className="text-xl">CS1A</h3>
-        </div>
-
-        <div className="flex items-center justify-center flex-col bg-gray-700  p-2 rounded-lg w-44  ">
-          <img
-            className="rounded-full border-gray-100 shadow-sm w-24 h-24"
-            src="https://randomuser.me/api/portraits/women/43.jpg"
-            alt="user image8"
-          />
-          <h1 className="text-gray-50 font-semibold">Гансүх Болормаа</h1>
-          <h3 className="text-xl">CS1A</h3>
-        </div>
-
-        <div className="flex items-center justify-center flex-col bg-gray-700  p-2 rounded-lg w-44  ">
-          <img
-            className="rounded-full border-gray-100 shadow-sm w-24 h-24"
-            src="https://randomuser.me/api/portraits/women/43.jpg"
-            alt="user image1"
-          />
-          <h1 className="text-gray-50 font-semibold">Гансүх Болормаа</h1>
-          <h3 className="text-xl">CS1A</h3>
-        </div>
-
-        <div className="flex items-center justify-center flex-col bg-gray-700  p-2 rounded-lg w-44  ">
-          <img
-            className="rounded-full border-gray-100 shadow-sm w-24 h-24"
-            src="https://randomuser.me/api/portraits/women/43.jpg"
-            alt="user image2"
-          />
-          <h1 className="text-gray-50 font-semibold">Гансүх Болормаа</h1>
-          <h3 className="text-xl">CS1A</h3>
-        </div>
-
-        <div className="flex items-center justify-center flex-col bg-gray-700  p-2 rounded-lg w-44  ">
-          <img
-            className="rounded-full border-gray-100 shadow-sm w-24 h-24"
-            src="https://randomuser.me/api/portraits/women/43.jpg"
-            alt="user image3"
-          />
-          <h1 className="text-gray-50 font-semibold">Гансүх Болормаа</h1>
-          <h3 className="text-xl">CS1A</h3>
-        </div>
-
-        <div className="flex items-center justify-center flex-col bg-gray-700  p-2 rounded-lg w-44  ">
-          <img
-            className="rounded-full border-gray-100 shadow-sm w-24 h-24"
-            src="https://randomuser.me/api/portraits/women/43.jpg"
-            alt="user image4"
-          />
-          <h1 className="text-gray-50 font-semibold">Гансүх Болормаа</h1>
-          <h3 className="text-xl">CS1A</h3>
-        </div>
-
-        <div className="flex items-center justify-center flex-col bg-gray-700  p-2 rounded-lg w-44  ">
-          <img
-            className="rounded-full border-gray-100 shadow-sm w-24 h-24"
-            src="https://randomuser.me/api/portraits/women/43.jpg"
-            alt="user image5"
-          />
-          <h1 className="text-gray-50 font-semibold">Гансүх Болормаа</h1>
-          <h3 className="text-xl">CS1A</h3>
-        </div>
-
-        <div className="flex items-center justify-center flex-col bg-gray-700  p-2 rounded-lg w-44  ">
-          <img
-            className="rounded-full border-gray-100 shadow-sm w-24 h-24"
-            src="https://randomuser.me/api/portraits/women/43.jpg"
-            alt="user image6"
-          />
-          <h1 className="text-gray-50 font-semibold">Гансүх Болормаа</h1>
-          <h3 className="text-xl">CS1A</h3>
-        </div>
+    <div className="mt-16">
+      <div className=" mx-auto max-w-4xl flex flex-wrap justify-center space-x-4">
+        <ClubMembers name="Гансүх Болормаа" dep="CS1A" />
+        <ClubMembers name="Гансүх Болормаа" dep="CS1A" />
+        <ClubMembers name="Гансүх Болормаа" dep="CS1A" />
+        <ClubMembers name="Гансүх Болормаа" dep="CS1A" />
+        <ClubMembers name="Гансүх Болормаа" dep="CS1A" />
+        <ClubMembers name="Гансүх Болормаа" dep="CS1A" />
+        <ClubMembers name="Гансүх Болормаа" dep="CS1A" />
+        <ClubMembers name="Гансүх Болормаа" dep="CS1A" />
       </div>
     </div>
   );
