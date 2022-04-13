@@ -74,7 +74,12 @@ export default function Icons() {
             }}
             target="_blanck"
           >
-            <FontAwesomeIcon icon={faFacebookF} size="1x" color="white" />
+            <FontAwesomeIcon
+              icon={faFacebookF}
+              size="1x"
+              color="white"
+              className="hover:text-[#3b5998] p-5 rounded-lg"
+            />
           </Link>
         </li>
         <li>
@@ -84,7 +89,12 @@ export default function Icons() {
             }}
             target="_blanck"
           >
-            <FontAwesomeIcon icon={faGithub} size="1x" color="white" />
+            <FontAwesomeIcon
+              icon={faGithub}
+              size="1x"
+              color="white"
+              className="hover:text-teal-500 p-5 rounded-lg"
+            />
           </Link>
         </li>
         <li>
@@ -95,11 +105,21 @@ export default function Icons() {
             }}
             target="_blanck"
           >
-            <FontAwesomeIcon icon={faInstagram} size="1x" color="white" />
+            <FontAwesomeIcon
+              icon={faInstagram}
+              size="1x"
+              color="white"
+              className="hover:text-[#bc2a8d] p-5 rounded-lg"
+            />
           </Link>
         </li>
         <li>
-          <FontAwesomeIcon icon={faDiscord} size="1x" color="white" />
+          <FontAwesomeIcon
+            icon={faDiscord}
+            size="1x"
+            color="white"
+            className="hover:text-sky-600 p-5 rounded-lg"
+          />
         </li>
       </ul>
     </div>
