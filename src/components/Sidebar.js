@@ -84,7 +84,7 @@ const Sidebar = (props) => {
             <Link
               onClick={props.toggleSideBar}
               to={{
-                pathname: "https://www.facebook.com/Basarmn-110141001402215/",
+                pathname: "https://www.facebook.com/HureeChainClub",
               }}
               target="_blanck"
             >
@@ -97,7 +97,13 @@ const Sidebar = (props) => {
             </Link>
           </li>
           <li>
-            <Link onClick={props.toggleSideBar}>
+            <Link
+              onClick={props.toggleSideBar}
+              to={{
+                pathname: "https://github.com/Munguu0623",
+              }}
+              target="_blanck"
+            >
               <FontAwesomeIcon
                 icon={faGithub}
                 size="1x"
@@ -107,7 +113,13 @@ const Sidebar = (props) => {
             </Link>
           </li>
           <li>
-            <Link onClick={props.toggleSideBar}>
+            <Link
+              onClick={props.toggleSideBar}
+              to={{
+                pathname: "https://www.instagram.com/hureechain/",
+              }}
+              target="_blanck"
+            >
               <FontAwesomeIcon
                 icon={faInstagram}
                 size="1x"
