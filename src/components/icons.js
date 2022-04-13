@@ -66,7 +66,7 @@ export default function Icons() {
           />
         </li>
       </ul>
-      <ul className="flex justify-center space-x-10 md:hidden">
+      <ul className="flex justify-center space-x-4 sm:space-x-6 overflow-hidden px-2 md:hidden">
         <li>
           <Link
             to={{

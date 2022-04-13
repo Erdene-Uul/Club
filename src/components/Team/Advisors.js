@@ -1,83 +1,43 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
+import Carousel from "react-elastic-carousel";
+
 import ClubAdvisors from "../ClubAdvisors";
 
-import { Pagination } from "swiper";
 const Advisor = () => {
+  const breakpoints = [
+    { width: 1, itemsToShow: 1, itemPadding: [10, 10] },
+    { width: 600, itemsToShow: 2, itemsToScroll: 2, itemPadding: [10, 20] },
+    { width: 850, itemsToShow: 3, itemsToScroll: 2, itemPadding: [10, 20] },
+    { width: 1000, itemsToShow: 3.5, itemsToScroll: 2, itemPadding: [10, 30] },
+  ];
   return (
-    <div className="max-w-screen-xl mx-auto my-16">
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
-        breakpoints={{
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 4,
-            spaceBetween: 50,
-          },
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
+    <div className="max-w-7xl mx-auto my-16">
+      <Carousel
+        disableArrowsOnEnd={true}
+        breakPoints={breakpoints}
+        itemPadding={[10, 30]}
       >
-        <div className="mt-16 flex justify-center space-x-12 max-w-6xl mx-auto">
-          <div className="flex gap-8">
-            {/* Youngmi teacher */}
-            <SwiperSlide>
-              <ClubAdvisors
-                name="PHD, КИМ ЮУНГМИ"
-                about="Компьютерийн Шинжилэх Ухааны тэнхимийн эрхлэгч багш"
-                image="YoungMiKim"
-              />
-            </SwiperSlide>
-            {/* Shim */}
-            <SwiperSlide>
-              <ClubAdvisors
-                name="PHD, ШИН КВАНГЧЁОЛ"
-                about="Компьютерийн Шинжилэх Ухааны тэнхимийн багш"
-                image="KwangCheolShin"
-              />
-            </SwiperSlide>
-            {/* Azbayar */}
-            <SwiperSlide>
-              <ClubAdvisors
-                name="MS, М. АЗБАЯР"
-                about=" Компьютерийн Шинжилэх Ухааны тэнхимийн багш"
-                image="AzbayarMunkhbayar"
-              />
-            </SwiperSlide>
-
-            {/* Отгон-баатар */}
-            <SwiperSlide>
-              <ClubAdvisors
-                name="MS, Ю. ОТГОН-БААТАР"
-                about="Мэдээлэл холбооны тэнхимийн эрхлэгч"
-                image="otgonbaatarYura"
-              />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <ClubAdvisors
-                name="PHD, ШИН КВАНГЧЁОЛ"
-                about="Компьютерийн Шинжилэх Ухааны тэнхимийн багш"
-                image="KwangCheolShin"
-              />
-            </SwiperSlide>
-          </div>
-        </div>
-      </Swiper>
+        <ClubAdvisors
+          name="PHD, КИМ ЮУНГМИ"
+          about="Компьютерийн Шинжилэх Ухааны тэнхимийн эрхлэгч багш"
+          image="YoungMiKim"
+        />
+        <ClubAdvisors
+          name="PHD, ШИН КВАНГЧЁОЛ"
+          about="Компьютерийн Шинжилэх Ухааны тэнхимийн багш"
+          image="KwangCheolShin"
+        />
+        <ClubAdvisors
+          name="MS, Ю. ОТГОН-БААТАР"
+          about="Мэдээлэл холбооны тэнхимийн эрхлэгч"
+          image="otgonbaatarYura"
+        />
+        <ClubAdvisors
+          name="MS, М. АЗБАЯР"
+          about=" Компьютерийн Шинжилэх Ухааны тэнхимийн багш"
+          image="AzbayarMunkhbayar"
+        />
+      </Carousel>
     </div>
   );
 };

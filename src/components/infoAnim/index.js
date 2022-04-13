@@ -4,7 +4,7 @@ import styles from "./style.module.css";
 const infoAnimation = () => {
   return (
     <div className="flex flex-col justify-center items-center lg:flex-row mx-auto max-w-7xl">
-      <div className={` ${styles.universe}`}>
+      <div className={` ${styles.universe} `}>
         <div className={styles.earth}></div>
         <div className={styles.moon}></div>
       </div>

@@ -1,9 +1,5 @@
 
-.rec.rec-arrow {
-    border-radius: 50%;
-    color:rgb(204, 223, 223);
-    background: rgb(119, 119, 119);
-}
+
 /* round buttons on hover */
 .rec.rec-arrow:hover {
     border-radius: 50%;
@@ -15,11 +11,10 @@
     background: rgb(139, 139, 139);
 
 }
-
-/* hide disabled buttons */
-.rec.rec-arrow:disabled {
-    /* visibility: hidden; */
+.rec.rec-arrow{
+    visibility: hidden;
 }
+/* hide disabled buttons */
 
 .rec.rec-dot:hover{
     box-shadow:0 0 1px 3px rgb(119, 119, 119);
