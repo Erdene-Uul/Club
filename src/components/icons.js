@@ -70,7 +70,7 @@ export default function Icons() {
         <li>
           <Link
             to={{
-              pathname: "https://www.facebook.com/Basarmn-110141001402215/",
+              pathname: "https://www.facebook.com/HureeChainClub",
             }}
             target="_blanck"
           >
@@ -78,10 +78,25 @@ export default function Icons() {
           </Link>
         </li>
         <li>
-          <FontAwesomeIcon icon={faGithub} size="1x" color="white" />
+          <Link
+            to={{
+              pathname: "https://github.com/Munguu0623",
+            }}
+            target="_blanck"
+          >
+            <FontAwesomeIcon icon={faGithub} size="1x" color="white" />
+          </Link>
         </li>
         <li>
-          <FontAwesomeIcon icon={faInstagram} size="1x" color="white" />
+          {/* https://www.instagram.com/hureechain/ */}
+          <Link
+            to={{
+              pathname: "https://www.instagram.com/hureechain/",
+            }}
+            target="_blanck"
+          >
+            <FontAwesomeIcon icon={faInstagram} size="1x" color="white" />
+          </Link>
         </li>
         <li>
           <FontAwesomeIcon icon={faDiscord} size="1x" color="white" />
