@@ -1,66 +1,41 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import ClubFounders from "../ClubFounders";
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
-
-import { Pagination } from "swiper";
+import Carousel from "react-elastic-carousel";
 
 const Founder = () => {
+  const breakpoints = [
+    { width: 1, itemsToShow: 1, itemPadding: [10, 10] },
+    { width: 600, itemsToShow: 2, itemsToScroll: 2, itemPadding: [10, 20] },
+    { width: 850, itemsToShow: 3, itemsToScroll: 2, itemPadding: [10, 20] },
+    { width: 1000, itemsToShow: 3.5, itemsToScroll: 2, itemPadding: [10, 30] },
+  ];
   return (
     <div className="max-w-6xl mx-auto mt-16 ">
-      <div className=" flexjustify-center items-center">
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={1}
-          pagination={{
-            clickable: true,
-          }}
-          breakpoints={{
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 50,
-            },
-          }}
-          modules={[Pagination]}
-          className="mySwiper"
+      <div className=" flex justify-center items-center">
+        <Carousel
+          disableArrowsOnEnd={true}
+          breakPoints={breakpoints}
+          itemPadding={[10, 30]}
         >
-          <SwiperSlide>
-            <ClubFounders
-              image="Munguu"
-              name="Б.Мөнгөн-Эрдэнэ"
-              about="Хүрээ дээд сургуулийн компьютерийн ухааны 2-р дамжааны оюутан."
-              color="#4392F5"
-            />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <ClubFounders
-              image="yozla"
-              name="З. Эрдэнэ-Уул"
-              about="Хүрээ дээд сургуулийн компьютерийн ухааны 2-р дамжааны оюутан."
-              color="#56CB7A"
-            />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <ClubFounders
-              image="uram"
-              name="Д. Ууганбаяр"
-              about="Хүрээ дээд сургуулийн компьютерийн ухааны 2-р дамжааны оюутан."
-              color="#D7A43F"
-            />
-          </SwiperSlide>
-        </Swiper>
+          <ClubFounders
+            image="Munguu"
+            name="Б. Мөнгөн-Эрдэнэ"
+            about="Хүрээ дээд сургуулийн компьютерийн ухааны 2-р дамжааны оюутан."
+            color="#4392F5"
+          />
+          <ClubFounders
+            image="yozla"
+            name="З. Эрдэнэ-Уул"
+            about="Хүрээ дээд сургуулийн компьютерийн ухааны 2-р дамжааны оюутан."
+            color="#56CB7A"
+          />
+          <ClubFounders
+            image="uram"
+            name="Д. Ууганбаяр"
+            about="Хүрээ дээд сургуулийн компьютерийн ухааны 2-р дамжааны оюутан."
+            color="#D7A43F"
+          />
+        </Carousel>
       </div>
     </div>
   );

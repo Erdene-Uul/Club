@@ -5,7 +5,7 @@ const ClubFounders = (props) => {
   return (
     <div
       style={{ backgroundColor: `${props.color}` }}
-      className="flex flex-col items-center px-5 w-[300px] h-[370px] rounded-[40px] mx-16 sm:mx-36 md:mx-0 "
+      className="flex flex-col items-center px-5 w-[300px] h-[370px] rounded-[40px] "
     >
       <img
         className="mt-6 mb-4 w-28 h-28 "

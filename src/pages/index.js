@@ -9,7 +9,6 @@ import Navbar from "../components/Cover/navbar";
 import Footer from "../components/Footer";
 import AnimationBtn from "../components/button";
 
-
 class Home extends Component {
   state = {
     showPopup: false,
@@ -37,10 +36,12 @@ class Home extends Component {
         <CoverEffect />
 
         <AboutUs />
-        <Team />
-  
 
-        <InfoAnimation />
+        <Team />
+
+        <div className="overflow-hidden">
+          <InfoAnimation />
+        </div>
         <div className="flex justify-center my-20">
           <Link to="/contact">
             <AnimationBtn />
