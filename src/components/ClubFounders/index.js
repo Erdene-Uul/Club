@@ -8,7 +8,7 @@ const ClubFounders = (props) => {
       className="flex flex-col items-center px-5 w-[300px] h-[370px] rounded-[40px] "
     >
       <img
-        className="mt-6 mb-4 w-28 h-28 "
+        className="mt-6 mb-4 w-28 h-28  rounded-full"
         src={require(`../../images/${props.image}.png`)}
         alt="founder"
       />

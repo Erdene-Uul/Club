@@ -5,16 +5,14 @@
 /.pnp
 .pnp.js
 /clubnews
-<<<<<<< HEAD
-
-=======
->>>>>>> 790c423a8d3032220ff921ed6a542210336c0c7c
 # testing
 /coverage
 
 # production
 /build
 
+
+package-lock.json
 # misc
 .DS_Store
 .env.local
