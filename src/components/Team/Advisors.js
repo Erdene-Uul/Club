@@ -18,12 +18,12 @@ const Advisor = () => {
       >
         <ClubAdvisors
           name="PHD, КИМ ЮУНГМИ"
-          about="Компьютерийн Шинжилэх Ухааны тэнхимийн эрхлэгч багш"
+          about="Компьютерийн Шинжлэх Ухааны тэнхимийн эрхлэгч багш"
           image="YoungMiKim"
         />
         <ClubAdvisors
           name="PHD, ШИН КВАНГЧЁОЛ"
-          about="Компьютерийн Шинжилэх Ухааны тэнхимийн багш"
+          about="Компьютерийн Шинжлэх Ухааны тэнхимийн багш"
           image="KwangCheolShin"
         />
         <ClubAdvisors
@@ -33,7 +33,7 @@ const Advisor = () => {
         />
         <ClubAdvisors
           name="MS, М. АЗБАЯР"
-          about=" Компьютерийн Шинжилэх Ухааны тэнхимийн багш"
+          about=" Компьютерийн Шинжлэх Ухааны тэнхимийн багш"
           image="AzbayarMunkhbayar"
         />
       </Carousel>
