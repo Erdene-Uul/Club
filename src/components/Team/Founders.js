@@ -15,8 +15,7 @@ const Founder = () => {
         <Carousel
           disableArrowsOnEnd={true}
           breakPoints={breakpoints}
-          itemPadding={[10, 30]}
-        >
+          itemPadding={[10, 30]}>
           <ClubFounders
             image="Munguu"
             name="Б. Мөнгөн-Эрдэнэ"
@@ -30,9 +29,9 @@ const Founder = () => {
             color="#56CB7A"
           />
           <ClubFounders
-            image="uram"
-            name="Д. Ууганбаяр"
-            about="Хүрээ дээд сургуулийн компьютерийн ухааны 3-р дамжааны оюутан."
+            image="hos"
+            name="Д. Хосбат"
+            about="Хүрээ дээд сургуулийн компьютерийн ухааны 2-р дамжааны оюутан."
             color="#D7A43F"
           />
         </Carousel>
